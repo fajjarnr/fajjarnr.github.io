@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import Title from "../../components/Title";
 
 const posts = [
   {
@@ -64,6 +65,7 @@ const posts = [
 export default function Blog() {
   return (
     <>
+      <Title name="Blog"></Title>
       <div className="py-6">
         <Navbar></Navbar>
       </div>
