@@ -17,12 +17,12 @@ export default function Home() {
         <section>
           <Hero></Hero>
         </section>
-        <section className="bg-white">
+        {/* <section className="bg-white">
           <Project></Project>
         </section>
         <section className="bg-indigo-700">
           <CTA></CTA>
-        </section>
+        </section> */}
       </main>
       <section>
         <Footer></Footer>

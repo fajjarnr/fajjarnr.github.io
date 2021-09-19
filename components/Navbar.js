@@ -1,9 +1,9 @@
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 import navigation from "../constants/navigation.json";
-import Image from "next/image";
 import Logo from "../public/logo.svg";
 
 export default function Navbar() {

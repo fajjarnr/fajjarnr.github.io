@@ -1,21 +1,15 @@
+/* eslint-disable @next/next/no-img-element */
+import { useRef, useState } from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Title from "../components/Title";
-
-const products = [
-  {
-    id: 1,
-    name: "Fusion",
-    category: "UI Kit",
-    href: "#",
-    price: "$49",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
-    imageAlt:
-      "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background.",
-  },
-];
+import data from "../constants/project.json";
 
 export default function Project() {
+  const [open, setOpen] = useState(true);
+
+  const cancelButtonRef = useRef(null);
+
   return (
     <>
       <Title name="Project"></Title>
@@ -24,44 +18,47 @@ export default function Project() {
       </section>
       <div className="bg-white">
         <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <div className="items-center">
-            <h2 className="text-lg text-center font-bold text-gray-900">
+          <div className="text-center">
+            <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               Project
             </h2>
+            <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+              libero labore natus atque, ducimus sed.
+            </p>
           </div>
-          <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-            {products.map((product) => (
+          <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-3">
+            {data.map((product) => (
               <div key={product.id} className="relative group">
                 <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
                   <img
                     src={product.imageSrc}
-                    alt={product.imageAlt}
+                    alt={product.name}
                     className="object-center object-cover"
                   />
                   <div
                     className="flex items-end opacity-0 p-4 group-hover:opacity-100"
                     aria-hidden="true"
                   >
-                    <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
-                      View Product
-                    </div>
+                    <button className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                      View Project
+                    </button>
                   </div>
                 </div>
                 <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
                   <h3>
-                    <a href="#">
-                      <span aria-hidden="true" className="absolute inset-0" />
-                      {product.name}
-                    </a>
+                    <span aria-hidden="true" className="absolute inset-0" />
+                    {product.name}
                   </h3>
-                  <p>{product.price}</p>
                 </div>
-                <p className="mt-1 text-sm text-gray-500">{product.category}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
+      <section>
+        <Footer></Footer>
+      </section>
     </>
   );
 }

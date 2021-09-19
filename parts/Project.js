@@ -1,76 +1,48 @@
-const products = [
-  {
-    id: 1,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
-    imageAlt: "Model wearing women's black cotton crewneck tee.",
-  },
-  {
-    id: 2,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
-    imageAlt: "Model wearing women's black cotton crewneck tee.",
-  },
-  {
-    id: 3,
-    name: "Black Basic Tee",
-    price: "$32",
-    href: "#",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
-    imageAlt: "Model wearing women's black cotton crewneck tee.",
-  },
-];
+/* eslint-disable @next/next/no-img-element */
+import project from "../constants/project.json";
+import Link from "next/link";
 
 export default function Project() {
   return (
-    <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-      <div className="sm:flex sm:items-baseline sm:justify-between">
-        <h2 className="text-3xl font-medium tracking-tight text-gray-900">
-          Recent Project
-        </h2>
-        <a
-          href="#"
-          className="hidden text-sm font-semibold text-indigo-600 hover:text-indigo-500 sm:block"
-        >
-          Browse all projects<span aria-hidden="true"> &rarr;</span>
-        </a>
+    <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="flex items-center justify-between space-x-4">
+        <h2 className="text-lg font-medium text-gray-900">Recent Project</h2>
+        <Link href="/project">
+          <a className="whitespace-nowrap text-sm font-medium text-indigo-600 hover:text-indigo-500">
+            View all<span aria-hidden="true"> &rarr;</span>
+          </a>
+        </Link>
       </div>
-
-      <div className="mt-6 grid grid-cols-1 gap-y-10 sm:grid-cols-3 sm:gap-y-0 sm:gap-x-6 lg:gap-x-8">
-        {products.map((product) => (
-          <div key={product.id} className="group relative">
-            <div className="w-full h-96 rounded-lg overflow-hidden group-hover:opacity-75 sm:h-auto sm:aspect-w-2 sm:aspect-h-3">
+      <div className="mt-6 grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+        {project.slice(0, 4).map((product) => (
+          <div key={product.id} className="relative group">
+            <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
               <img
                 src={product.imageSrc}
                 alt={product.imageAlt}
-                className="w-full h-full object-center object-cover"
+                className="object-center object-cover"
               />
+              <div
+                className="flex items-end opacity-0 p-4 group-hover:opacity-100"
+                aria-hidden="true"
+              >
+                <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
+                  View Product
+                </div>
+              </div>
             </div>
-            <h3 className="mt-4 text-base font-semibold text-gray-900">
-              <a href={product.href}>
-                <span className="absolute inset-0" />
-                {product.name}
-              </a>
-            </h3>
-            <p className="mt-1 text-sm text-gray-500">{product.price}</p>
+            <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+              <h3>
+                <a href="#">
+                  <span aria-hidden="true" className="absolute inset-0" />
+                  {product.name}
+                </a>
+              </h3>
+              <p>{product.price}</p>
+            </div>
+            <p className="mt-1 text-sm text-gray-500">{product.category}</p>
           </div>
         ))}
-      </div>
-
-      <div className="mt-6 sm:hidden">
-        <a
-          href="#"
-          className="block text-sm font-semibold text-indigo-600 hover:text-indigo-500"
-        >
-          Browse all favorites<span aria-hidden="true"> &rarr;</span>
-        </a>
       </div>
     </div>
   );

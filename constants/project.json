@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  },
+  {
+    "id": 2,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  },
+  {
+    "id": 14,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  },
+  {
+    "id": 11,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  },
+  {
+    "id": 15,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  },
+  {
+    "id": 111,
+    "name": "Fusion",
+    "category": "UI Kit",
+    "href": "#",
+    "price": "$49",
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/product-page-05-related-product-01.jpg",
+    "imageAlt": "Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+  }
+]
