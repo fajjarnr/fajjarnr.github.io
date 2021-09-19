@@ -10,7 +10,7 @@ export default function Contact() {
       <div className="py-6 z-20">
         <Navbar></Navbar>
       </div>
-      <div className="min-h-screen pt-6 bg-white">
+      <div className="min-h-screen bg-white">
         <main className="overflow-hidden">
           <div className="bg-warm-gray-50">
             <div className="py-24 lg:py-32">
@@ -18,11 +18,7 @@ export default function Contact() {
                 <h1 className="text-4xl font-extrabold tracking-tight text-warm-gray-900 sm:text-5xl lg:text-6xl">
                   Get in touch
                 </h1>
-                <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl">
-                  Vel nunc non ut montes, viverra tempor. Proin lectus nibh
-                  phasellus morbi non morbi. In elementum urna ut volutpat.
-                  Sagittis et vel et fermentum amet consequat.
-                </p>
+                {/* <p className="mt-6 text-xl text-warm-gray-500 max-w-3xl"></p> */}
               </div>
             </div>
           </div>
@@ -77,7 +73,7 @@ export default function Contact() {
                 </h2>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3">
-                  <div className="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-green-500 to-green-600 sm:px-10 xl:p-12">
+                  <div className="relative overflow-hidden py-10 px-6 bg-gradient-to-b from-yellow-500 to-yellow-300 sm:px-10 xl:p-12">
                     <div
                       className="absolute inset-0 pointer-events-none sm:hidden"
                       aria-hidden="true"
@@ -180,7 +176,7 @@ export default function Contact() {
                     <h3 className="text-lg font-medium text-white">
                       Contact information
                     </h3>
-                    <p className="mt-6 text-base text-green-50 max-w-3xl">
+                    <p className="mt-6 text-base text-yellow-50 max-w-3xl">
                       Anda bisa menghubungi saya melalui phone, email atau
                       social media
                     </p>
@@ -188,9 +184,9 @@ export default function Contact() {
                       <dt>
                         <span className="sr-only">Phone number</span>
                       </dt>
-                      <dd className="flex text-base text-green-50">
+                      <dd className="flex text-base text-yellow-50">
                         <PhoneIcon
-                          className="flex-shrink-0 w-6 h-6 text-green-200"
+                          className="flex-shrink-0 w-6 h-6 text-yellow-200"
                           aria-hidden="true"
                         />
                         <span className="ml-3">+62 822-1029-3875</span>
@@ -198,9 +194,9 @@ export default function Contact() {
                       <dt>
                         <span className="sr-only">Email</span>
                       </dt>
-                      <dd className="flex text-base text-green-50">
+                      <dd className="flex text-base text-yellow-50">
                         <MailIcon
-                          className="flex-shrink-0 w-6 h-6 text-green-200"
+                          className="flex-shrink-0 w-6 h-6 text-yellow-200"
                           aria-hidden="true"
                         />
                         <span className="ml-3">fajjarnr@gmail.com</span>
@@ -209,7 +205,7 @@ export default function Contact() {
                     <ul role="list" className="mt-8 flex space-x-12">
                       <li>
                         <a
-                          className="text-green-200 hover:text-green-100"
+                          className="text-yellow-200 hover:text-yellow-100"
                           href="#"
                         >
                           <span className="sr-only">Facebook</span>
@@ -229,7 +225,7 @@ export default function Contact() {
                       </li>
                       <li>
                         <a
-                          className="text-green-200 hover:text-green-100"
+                          className="text-yellow-200 hover:text-yellow-100"
                           href="#"
                         >
                           <span className="sr-only">GitHub</span>
@@ -249,7 +245,7 @@ export default function Contact() {
                       </li>
                       <li>
                         <a
-                          className="text-green-200 hover:text-green-100"
+                          className="text-yellow-200 hover:text-yellow-100"
                           href="#"
                         >
                           <span className="sr-only">Twitter</span>
@@ -288,7 +284,7 @@ export default function Contact() {
                             name="first-name"
                             id="first-name"
                             autoComplete="given-name"
-                            className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-green-500 focus:border-green-500 out border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
@@ -305,7 +301,7 @@ export default function Contact() {
                             name="last-name"
                             id="last-name"
                             autoComplete="family-name"
-                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
@@ -322,7 +318,7 @@ export default function Contact() {
                             name="email"
                             type="email"
                             autoComplete="email"
-                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
@@ -347,7 +343,7 @@ export default function Contact() {
                             name="phone"
                             id="phone"
                             autoComplete="tel"
-                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                             aria-describedby="phone-optional"
                           />
                         </div>
@@ -364,7 +360,7 @@ export default function Contact() {
                             type="text"
                             name="subject"
                             id="subject"
-                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-green-500 focus:border-green-500 border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                           />
                         </div>
                       </div>
@@ -388,7 +384,7 @@ export default function Contact() {
                             id="message"
                             name="message"
                             rows={4}
-                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-green-500 focus:border-green-500 border border-gray-300 rounded-md"
+                            className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                             aria-describedby="message-max"
                             defaultValue={""}
                           />
@@ -397,7 +393,7 @@ export default function Contact() {
                       <div className="sm:col-span-2 sm:flex sm:justify-end">
                         <button
                           type="submit"
-                          className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 sm:w-auto"
+                          className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-yellow-500 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 sm:w-auto"
                         >
                           Submit
                         </button>
