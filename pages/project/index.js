@@ -6,8 +6,6 @@ import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
 
 export default function Project({ projects }) {
-  console.log("projects :>> ", projects);
-
   return (
     <>
       <Title name="Project"></Title>

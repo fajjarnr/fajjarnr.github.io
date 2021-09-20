@@ -44,7 +44,7 @@ export default function NotFound() {
                 href="#"
                 className="text-base font-medium text-yellow-300 hover:text-yellow-500"
               >
-                Go back {count} <span aria-hidden="true"> &rarr;</span>
+                Go back Home {count} <span aria-hidden="true"> &rarr;</span>
               </a>
             </div>
           </div>
