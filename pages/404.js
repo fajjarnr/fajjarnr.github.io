@@ -12,7 +12,7 @@ export default function NotFound() {
       setCount((preCount) => --preCount);
     }, 1000);
 
-    count === 0 && router.back();
+    count === 0 && router.push("/");
 
     return () => clearInterval(interval);
   }, [count]);
