@@ -127,9 +127,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl py-6 mx-auto px-4">
+      {/* <div className="max-w-7xl py-6 mx-auto px-4">
         <h3 className="text-3xl">Skill</h3>
-      </div>
+      </div> */}
       <section>
         <Footer></Footer>
       </section>
