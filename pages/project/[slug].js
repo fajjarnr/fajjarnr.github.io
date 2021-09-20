@@ -10,8 +10,6 @@ export default function ProjectDetails({ project }) {
   const { category, name, description, image, preview, sourceCode, stack } =
     project.fields;
 
-  console.log("project :>> ", project);
-
   return (
     <>
       <Title name={name}></Title>
@@ -119,6 +117,7 @@ export default function ProjectDetails({ project }) {
               <div className="text-base max-w-prose mx-auto lg:max-w-none">
                 <p className="text-lg text-gray-500">{description}</p>
                 <div className="mt-5">
+                  <h3 className="text-xl mb-2 font-medium">Tech Stack :</h3>
                   {stack?.map((item, index) => (
                     <span
                       key={index}
