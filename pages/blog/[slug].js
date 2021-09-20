@@ -122,7 +122,7 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const { items } = await client.getEntries({
     content_type: "blog",
     "fields.slug": params.slug,
