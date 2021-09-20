@@ -4,6 +4,7 @@ import Link from "next/link";
 import Footer from "../../components/Footer";
 import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
+import formatDate from "../../helpers/formatDate";
 
 export default function Blog({ blogs }) {
   return (
@@ -88,9 +89,8 @@ export default function Blog({ blogs }) {
                       </p>
                       <div className="flex space-x-1 text-sm text-gray-500">
                         <time dateTime={post.fields?.date}>
-                          {post.fields?.date}
+                          {formatDate(post.fields?.date)}
                         </time>
-                        <span aria-hidden="true">&middot;</span>
                       </div>
                     </div>
                   </div>

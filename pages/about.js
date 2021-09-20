@@ -9,6 +9,12 @@ export default function About() {
       <div className="py-6">
         <Navbar></Navbar>
       </div>
+      <h1>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
+        laudantium fugit, laborum quidem minus saepe eveniet sit accusantium
+        enim iste pariatur ducimus repudiandae, perferendis, consectetur hic ea
+        eum et sed.
+      </h1>
       <section>
         <Footer></Footer>
       </section>
