@@ -107,7 +107,7 @@ export default function Blog({ blogs }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -119,5 +119,6 @@ export async function getServerSideProps() {
     props: {
       blogs: res.items,
     },
+    revalidate: 30,
   };
 }

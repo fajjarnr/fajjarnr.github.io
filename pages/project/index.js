@@ -6,6 +6,8 @@ import Navbar from "../../components/Navbar";
 import Title from "../../components/Title";
 
 export default function Project({ projects }) {
+  console.log("projects :>> ", projects);
+
   return (
     <>
       <Title name="Project"></Title>
@@ -52,7 +54,7 @@ export default function Project({ projects }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
@@ -64,5 +66,6 @@ export async function getServerSideProps() {
     props: {
       projects: res.items,
     },
+    revalidate: 30,
   };
 }
