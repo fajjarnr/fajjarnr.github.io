@@ -118,7 +118,7 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 }
 
@@ -132,6 +132,6 @@ export async function getStaticProps({ params }) {
     props: {
       blog: items[0],
     },
-    revalidate: 10,
+    revalidate: 60,
   };
 }
