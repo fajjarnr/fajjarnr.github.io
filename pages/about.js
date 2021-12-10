@@ -1,9 +1,9 @@
-import Image from "next/image";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Title from "../components/Title";
-import AboutProfile from "../public/AboutProfile.svg";
-import Link from "next/link";
+import Image from 'next/image';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
+import Title from '../components/Title';
+import AboutProfile from '../public/AboutProfile.svg';
+import Link from 'next/link';
 
 export default function About() {
   return (
