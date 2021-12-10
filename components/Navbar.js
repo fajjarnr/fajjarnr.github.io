@@ -1,16 +1,16 @@
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import Image from "next/image";
-import Link from "next/link";
-import { Fragment } from "react";
-import navigation from "../constants/navigation.json";
-import Logo from "../public/logo.svg";
+import { Popover, Transition } from '@headlessui/react';
+import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Fragment } from 'react';
+import navigation from '../constants/navigation.json';
+import Logo from '../public/logo.svg';
 
 export default function Navbar() {
   return (
     <Popover>
       <nav
-        className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
+        className="relative z-50 max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
         aria-label="Global"
       >
         <div className="flex items-center flex-1">
