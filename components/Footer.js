@@ -1,5 +1,5 @@
-import Link from "next/link";
-import social from "../constants/social";
+import Link from 'next/link';
+import social from '../constants/social';
 
 export default function Footer() {
   return (
@@ -8,7 +8,10 @@ export default function Footer() {
         <div className="flex justify-center space-x-6 md:order-2">
           {social.map((item) => (
             <Link key={item.name} href={item.href}>
-              <a target="_blank" className="text-gray-400 hover:text-gray-500">
+              <a
+                target="_blank"
+                className="text-gray-400 hover:text-yellow-300"
+              >
                 <span className="sr-only">{item.name}</span>
                 <item.icon className="h-6 w-6" aria-hidden="true" />
               </a>
