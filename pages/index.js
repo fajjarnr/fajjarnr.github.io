@@ -1,4 +1,3 @@
-import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import Title from '../components/Title';

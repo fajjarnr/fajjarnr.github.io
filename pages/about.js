@@ -8,7 +8,6 @@ export default function About() {
   return (
     <Layout>
       <Title name="About"></Title>
-      <div className="py-6"></div>
       <div className="relative py-16 bg-white">
         <div
           className="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block"

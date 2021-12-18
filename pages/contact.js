@@ -1,6 +1,5 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import Layout from '../components/Layout';
-import Navbar from '../components/Navbar';
 import Title from '../components/Title';
 
 export default function Contact() {
