@@ -1,17 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import { createClient } from "contentful";
-import Link from "next/link";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Title from "../../components/Title";
+import { createClient } from 'contentful';
+import Link from 'next/link';
+import Layout from '../../components/Layout';
+import Title from '../../components/Title';
 
 export default function Project({ projects }) {
   return (
-    <>
+    <Layout>
       <Title name="Project"></Title>
-      <section className="py-6">
-        <Navbar></Navbar>
-      </section>
+
       <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
@@ -45,10 +42,7 @@ export default function Project({ projects }) {
           ))}
         </div>
       </div>
-      <section>
-        <Footer></Footer>
-      </section>
-    </>
+    </Layout>
   );
 }
 
@@ -58,7 +52,7 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
-  const res = await client.getEntries({ content_type: "project" });
+  const res = await client.getEntries({ content_type: 'project' });
 
   return {
     props: {

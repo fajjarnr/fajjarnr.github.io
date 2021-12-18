@@ -1,28 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
-import { CameraIcon, EyeIcon, CodeIcon } from "@heroicons/react/solid";
-import { createClient } from "contentful";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Title from "../../components/Title";
-import Link from "next/link";
+import { CameraIcon, EyeIcon, CodeIcon } from '@heroicons/react/solid';
+import { createClient } from 'contentful';
+import Footer from '../../components/Footer';
+import Navbar from '../../components/Navbar';
+import Title from '../../components/Title';
+import Link from 'next/link';
+import Layout from '../../components/Layout';
 
 export default function ProjectDetails({ project }) {
   const { category, name, description, image, preview, sourceCode, stack } =
     project.fields;
 
   return (
-    <>
+    <Layout>
       <Title name={name}></Title>
-      <div className="py-6">
-        <Navbar></Navbar>
-      </div>
       <div className="bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
           <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
           <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
             <div>
               <h2 className="text-base text-yellow-300 font-semibold tracking-wide uppercase">
-                {category?.fields?.name ?? ""}
+                {category?.fields?.name ?? ''}
               </h2>
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 {name}
@@ -81,7 +79,7 @@ export default function ProjectDetails({ project }) {
                       aria-hidden="true"
                     />
                     <span className="ml-2">
-                      {image?.fields?.description ?? ""}
+                      {image?.fields?.description ?? ''}
                     </span>
                   </figcaption>
                 </figure>
@@ -132,10 +130,7 @@ export default function ProjectDetails({ project }) {
           </div>
         </div>
       </div>
-      <section>
-        <Footer></Footer>
-      </section>
-    </>
+    </Layout>
   );
 }
 
@@ -146,7 +141,7 @@ const client = createClient({
 
 export async function getStaticPaths() {
   const res = await client.getEntries({
-    content_type: "project",
+    content_type: 'project',
   });
 
   const paths = res.items.map((item) => {
@@ -157,14 +152,14 @@ export async function getStaticPaths() {
 
   return {
     paths,
-    fallback: "blocking",
+    fallback: 'blocking',
   };
 }
 
 export async function getStaticProps({ params }) {
   const { items } = await client.getEntries({
-    content_type: "project",
-    "fields.slug": params.slug,
+    content_type: 'project',
+    'fields.slug': params.slug,
   });
 
   return {

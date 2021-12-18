@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <Popover>
       <nav
-        className="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
+        className="relative pt-6 max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6"
         aria-label="Global"
       >
         <div className="flex items-center flex-1">

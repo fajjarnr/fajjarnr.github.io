@@ -1,18 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import { createClient } from "contentful";
-import Link from "next/link";
-import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
-import Title from "../../components/Title";
-import formatDate from "../../helpers/formatDate";
+import { createClient } from 'contentful';
+import Link from 'next/link';
+import Header from '../../components/Header';
+import Layout from '../../components/Layout';
+import formatDate from '../../helpers/formatDate';
 
 export default function Blog({ blogs }) {
   return (
-    <>
-      <Title name="Blog"></Title>
-      <div className="py-6">
-        <Navbar></Navbar>
-      </div>
+    <Layout>
+      <Header title="Blog" strip="~" web="Fajar Nur Rohman"></Header>
       <div className="relative pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div className="absolute inset-0">
           <div className="bg-white h-1/3 sm:h-2/3" />
@@ -100,10 +96,7 @@ export default function Blog({ blogs }) {
           </div>
         </div>
       </div>
-      <section>
-        <Footer></Footer>
-      </section>
-    </>
+    </Layout>
   );
 }
 
@@ -113,7 +106,7 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
   });
 
-  const res = await client.getEntries({ content_type: "blog" });
+  const res = await client.getEntries({ content_type: 'blog' });
 
   return {
     props: {

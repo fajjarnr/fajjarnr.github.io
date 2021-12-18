@@ -1,6 +1,6 @@
-import Navbar from "./Navbar";
-import Image from "next/image";
-import Profile from "../public/profile.svg";
+import Navbar from './Navbar';
+import Image from 'next/image';
+import Profile from '../public/profile.svg';
 
 export default function Hero() {
   return (
@@ -52,8 +52,6 @@ export default function Hero() {
       </div>
 
       <div className="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-        <Navbar></Navbar>
-
         <main className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
           <div className="lg:grid lg:grid-cols-12 lg:gap-8">
             <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">

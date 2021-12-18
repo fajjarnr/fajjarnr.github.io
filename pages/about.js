@@ -1,17 +1,14 @@
 import Image from 'next/image';
-import Footer from '../components/Footer';
-import Navbar from '../components/Navbar';
+import Link from 'next/link';
+import Layout from '../components/Layout';
 import Title from '../components/Title';
 import AboutProfile from '../public/AboutProfile.svg';
-import Link from 'next/link';
 
 export default function About() {
   return (
-    <>
+    <Layout>
       <Title name="About"></Title>
-      <div className="py-6">
-        <Navbar></Navbar>
-      </div>
+      <div className="py-6"></div>
       <div className="relative py-16 bg-white">
         <div
           className="hidden absolute top-0 inset-x-0 h-1/2 bg-gray-50 lg:block"
@@ -127,12 +124,6 @@ export default function About() {
           </div>
         </div>
       </div>
-      {/* <div className="max-w-7xl py-6 mx-auto px-4">
-        <h3 className="text-3xl">Skill</h3>
-      </div> */}
-      <section>
-        <Footer></Footer>
-      </section>
-    </>
+    </Layout>
   );
 }

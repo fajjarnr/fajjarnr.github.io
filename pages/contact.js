@@ -1,15 +1,12 @@
-import { MailIcon, PhoneIcon } from "@heroicons/react/outline";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Title from "../components/Title";
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
+import Title from '../components/Title';
 
 export default function Contact() {
   return (
-    <>
+    <Layout>
       <Title name="Contact"></Title>
-      <div className="py-6 z-20">
-        <Navbar></Navbar>
-      </div>
       <div className="min-h-screen bg-white">
         <main className="overflow-hidden">
           <div className="bg-warm-gray-50">
@@ -386,7 +383,7 @@ export default function Contact() {
                             rows={4}
                             className="py-3 px-4 block w-full shadow-sm text-warm-gray-900 focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md"
                             aria-describedby="message-max"
-                            defaultValue={""}
+                            defaultValue={''}
                           />
                         </div>
                       </div>
@@ -405,11 +402,7 @@ export default function Contact() {
             </div>
           </section>
         </main>
-
-        <section>
-          <Footer></Footer>
-        </section>
       </div>
-    </>
+    </Layout>
   );
 }
