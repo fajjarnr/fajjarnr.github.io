@@ -1,6 +1,7 @@
 import Navbar from './Navbar';
 import Image from 'next/image';
 import Profile from '../public/profile.svg';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -64,14 +65,22 @@ export default function Hero() {
                   <span className="text-yellow-300">Fajar Nur Rohman</span>
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+              <p className="mt-3 mb-8 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
                 Frontend Developer based in Pemalang, Indonesia. High level
                 experience in web design and development knowledge, producing
                 quality work
               </p>
-              <button className="my-5 py-4 px-4 bg-yellow-300 hover:bg-yellow-600 rounded text-white text-lg">
-                Download CV
-              </button>
+              <Link
+                href="https://drive.google.com/file/d/1-ngAiuhA2sFUyq_we1TAhiYJ6xDNu-4z/view"
+                passHref
+              >
+                <a
+                  target="_blank"
+                  className="my-5 py-4 px-4 bg-yellow-300 hover:bg-yellow-600 rounded text-white text-lg"
+                >
+                  Download CV
+                </a>
+              </Link>
             </div>
             <div className="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
               <svg

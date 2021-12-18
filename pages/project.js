@@ -26,7 +26,10 @@ export default function Project({ projects }) {
                 className="relative text-base mx-auto max-w-prose lg:max-w-none"
               >
                 <figure>
-                  <div className="aspect-w-12 aspect-h-12 lg:aspect-none">
+                  <div
+                    className="aspec
+                  t-w-12 aspect-h-12 lg:aspect-none"
+                  >
                     <img
                       className="rounded-lg shadow-lg object-cover object-center"
                       src={project.fields?.image?.fields?.file?.url}

@@ -8,7 +8,6 @@ export default function About() {
   return (
     <>
       <Title name="About"></Title>
-
       <Layout>
         <div className="relative py-16 bg-white">
           <div
@@ -17,16 +16,17 @@ export default function About() {
           />
           <div className="max-w-7xl mx-auto bg-yellow-400 lg:bg-transparent lg:px-8">
             <div className="lg:grid lg:grid-cols-12">
-              <div className="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+              <div className="relative lg:z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
                 <div
                   className="absolute inset-x-0 h-1/2 bg-gray-50 lg:hidden"
                   aria-hidden="true"
                 />
-                <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none lg:p-0">
+                <div className="max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-none  lg:p-0">
                   <Image
-                    className="object-cover object-center rounded shadow-2xl"
+                    className="object-center rounded shadow-2xl"
                     src={AboutProfile}
                     alt="Fajar"
+                    objectFit="cover"
                   />
                 </div>
               </div>
