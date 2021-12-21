@@ -8,6 +8,9 @@ export default function Header() {
         name="google-site-verification"
         content="i5XC8tWxae3ocQwlybiLBod5yysgz-kX5Nv5fJbwNQo"
       />
+      <meta charset="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1" />
       <meta name="title" content="Fajar Portofolio ✌️" />
@@ -28,7 +31,7 @@ export default function Header() {
         property="og:image:secure_url"
         content="https://www.fajar.tech/images/banner.png"
       />
-      <meta property="og:image:type" content="image/svg" />
+      <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="500" />
       <meta property="og:image:height" content="500" />
       <meta property="og:image:alt" content="logo" />
