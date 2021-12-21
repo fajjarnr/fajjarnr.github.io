@@ -20,10 +20,13 @@ export default function Header() {
       <meta property="og:determiner" content="the" />
       <meta property="og:locale" content="id_ID" />
       <meta property="og:site_name" content="Fajar Portofolio ✌️" />
-      <meta property="og:image" content="https://www.fajar.tech/logo.svg" />
+      <meta
+        property="og:image"
+        content="https://www.fajar.tech/images/banner.png"
+      />
       <meta
         property="og:image:secure_url"
-        content="https://www.fajar.tech/logo.svg"
+        content="https://www.fajar.tech/images/banner.png"
       />
       <meta property="og:image:type" content="image/svg" />
       <meta property="og:image:width" content="500" />
@@ -38,7 +41,7 @@ export default function Header() {
       />
       <meta
         property="twitter:image"
-        content="https://www.fajar.tech/logo.svg"
+        content="https://www.fajar.tech/images/banner.png"
       />
     </Head>
   );
