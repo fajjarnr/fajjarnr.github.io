@@ -71,7 +71,7 @@ export default function Hero() {
                 quality work
               </p>
               <Link
-                href="https://drive.google.com/file/d/1-ngAiuhA2sFUyq_we1TAhiYJ6xDNu-4z/view"
+                href="https://drive.google.com/file/d/1-7VDqlW2orHKz69bux-KTZ1fuP03XRtj/view"
                 passHref
               >
                 <a
