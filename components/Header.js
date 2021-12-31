@@ -8,7 +8,7 @@ export default function Header() {
         name="google-site-verification"
         content="i5XC8tWxae3ocQwlybiLBod5yysgz-kX5Nv5fJbwNQo"
       />
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
