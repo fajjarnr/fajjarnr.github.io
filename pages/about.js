@@ -111,9 +111,9 @@ export default function About() {
                     Fajar Nur Rohman
                   </h2>
                   <p className="text-lg text-white">
-                    Frontend Developer based in Pemalang, Indonesia. High level
-                    experience in web design and development knowledge,
-                    producing quality work
+                    Frontend Developer based in Pemalang, Indonesia. Experience
+                    in web design and development knowledge, producing quality
+                    work
                   </p>
                   <Link href="/project">
                     <a className="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-yellow-700 hover:bg-gray-50 sm:inline-block sm:w-auto">

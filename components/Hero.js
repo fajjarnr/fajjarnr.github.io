@@ -66,9 +66,8 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 mb-8 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                Frontend Developer based in Pemalang, Indonesia. High level
-                experience in web design and development knowledge, producing
-                quality work
+                Frontend Developer based in Pemalang, Indonesia. Experience in
+                web design and development knowledge, producing quality work
               </p>
               <Link
                 href="https://drive.google.com/file/d/1-7VDqlW2orHKz69bux-KTZ1fuP03XRtj/view"
